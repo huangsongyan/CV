@@ -1,0 +1,173 @@
+{
+    "siteTitle": "網站標題",
+    "menuList": [
+        {
+            "name": "關於我",
+            "link": "personal"
+        },
+        {
+            "name": "技能",
+            "link": "skills"
+        },
+        {
+            "name": "學歷",
+            "link": "education"
+        },
+        {
+            "name": "工作&其他經驗",
+            "link": "experiences"
+        },
+        {
+            "name": "參與專案",
+            "link": "projects"
+        }
+    ],
+    "personalInfo": {
+        "name": "名字",
+        "mail": "信箱",
+        "socialMediaList": [
+            {
+                "name": "fa-linkedin-square",
+                "title": "Follow me on Linkedin",
+                "link": "Add link"
+            },
+            {
+                "name": "fa-wordpress",
+                "title": "Follow me on Blog",
+                "link": "Add link"
+            },
+            {
+                "name": "fa fa-github",
+                "title": "Follow me on Github",
+                "link": "Add link"
+            }
+        ]
+    },
+    "skillInfo": [
+        {
+            "name": "前端",
+            "tag": [
+                "html",
+                "css",
+                "sass",
+                "bs",
+                "js",
+                "jq",
+                "react"
+            ]
+        },
+        {
+            "name": "後端",
+            "tag": [
+                "c",
+                "perl",
+                "php",
+                "mysql"
+            ]
+        },
+        {
+            "name": "其他",
+            "tag": [
+                "webpack",
+                "gulp",
+                "svn"
+            ]
+        }
+    ],
+    "educationInfo": [
+        {
+            "title": "學校名稱",
+            "subtitle": "其他資訊",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "class": ""
+        },
+        {
+            "title": "學校名稱",
+            "subtitle": "其他資訊",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "class": "timeline-inverted"
+        }
+    ],
+    "experienceInfo": [
+        {
+            "title": "公司名稱",
+            "subtitle": "其他資訊",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "tag": [
+            ],
+            "class": ""
+        },
+        {
+            "title": "公司名稱",
+            "subtitle": "其他資訊",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "tag": [
+            ],
+            "class": "timeline-inverted"
+        }
+    ],
+    "projectInfo": [
+        {
+            "project": "專案名稱",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        },
+         {
+            "project": "專案名稱",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        },
+        {
+            "project": "專案名稱",
+            "period": "時間",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        }
+    ]
+}

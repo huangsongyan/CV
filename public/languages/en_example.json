@@ -1,0 +1,173 @@
+{
+    "siteTitle": "This is site title",
+    "menuList": [
+        {
+            "name": "About Me",
+            "link": "personal"
+        },
+        {
+            "name": "Skills",
+            "link": "skills"
+        },
+        {
+            "name": "Education",
+            "link": "education"
+        },
+        {
+            "name": "Experiences",
+            "link": "experiences"
+        },
+        {
+            "name": "Projects",
+            "link": "projects"
+        }
+    ],
+    "personalInfo": {
+        "name": "Name",
+        "mail": "Mail",
+        "socialMediaList": [
+            {
+                "name": "fa-linkedin-square",
+                "title": "Follow me on Linkedin",
+                "link": "Add link"
+            },
+            {
+                "name": "fa-wordpress",
+                "title": "Follow me on Blog",
+                "link": "Add link"
+            },
+            {
+                "name": "fa fa-github",
+                "title": "Follow me on Github",
+                "link": "Add link"
+            }
+        ]
+    },
+    "skillInfo": [
+        {
+            "name": "Front-end",
+            "tag": [
+                "html",
+                "css",
+                "sass",
+                "bs",
+                "js",
+                "jq",
+                "react"
+            ]
+        },
+        {
+            "name": "Back-end",
+            "tag": [
+                "c",
+                "perl",
+                "php",
+                "mysql"
+            ]
+        },
+        {
+            "name": "Others",
+            "tag": [
+                "webpack",
+                "gulp",
+                "svn"
+            ]
+        }
+    ],
+    "educationInfo": [
+        {
+            "title": "School name",
+            "subtitle": "Other information",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "class": ""
+        },
+        {
+            "title": "School name",
+            "subtitle": "Other information",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "class": "timeline-inverted"
+        }
+    ],
+    "experienceInfo": [
+        {
+            "title": "Company name",
+            "subtitle": "Other information",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "tag": [
+            ],
+            "class": ""
+        },
+        {
+            "title": "Company name",
+            "subtitle": "Other information",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "sublist": [
+                "sublist1",
+                "sublist2..."
+            ],
+            "tag": [
+            ],
+            "class": "timeline-inverted"
+        }
+    ],
+    "projectInfo": [
+        {
+            "project": "Projet name",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        },
+        {
+            "project": "Projet name",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        },
+        {
+            "project": "Projet name",
+            "period": "from ~ to ~",
+            "list": [
+                "list1",
+                "list2..."
+            ],
+            "tag": [
+            ]
+        }
+    ]
+}

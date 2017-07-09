@@ -1,0 +1,273 @@
+$font-family1: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family2: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+$background-color: #eeeeee
+$font-color: #ffffff
+$change-color: #22c3aa
+$bar-color: #222222
+$border-color: #999999
+
+@mixin colorMatching
+    color: $font-color !important
+    background-color: $change-color !important
+
+body
+    font-family: $font-family1
+    background-color: $background-color
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-family: $font-family2
+    font-weight: bold
+
+ul
+    list-style-type: disc
+    padding-left: 20px
+
+a:link
+    text-decoration: none
+
+section
+    padding: 70px 0px 15px 0px
+    h2
+        margin-bottom: 40px
+
+footer
+    padding: 5px 0px
+    margin-top: 50px
+    background-color: $bar-color
+    color: $font-color
+    font-size: 11px
+
+.img-customize
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    margin: 0 auto
+    margin-top: 80px
+    margin-bottom: 50px
+
+.top-nav
+    background-color: $bar-color
+    border: 0
+    padding: 5px 50px
+
+.navbar-nav
+    > li > a
+        padding: 10px 7px
+        font-family: $font-family2
+        letter-spacing: 1px
+        color: $font-color !important
+    > .active > a
+        border-radius: 10px
+        +colorMatching
+        &:hover,
+        &:focus
+            +colorMatching
+
+.lang-group
+	position: fixed
+	top: 0
+	right: 0
+
+.lang-icon
+	padding-right: 5px
+
+.lang-btn
+	text-decoration: none !important
+	font-size: 13px
+	color: $font-color !important
+	&:focus
+		outline: none !important
+
+#goTop
+    display: none
+    position: fixed
+    right: 5px
+    bottom: 50px
+    background: #fff
+    cursor: pointer
+    z-index: 1000
+    background: none
+
+.social-element
+    display: inline-block
+    margin: 0 16px
+
+.skill-group div
+    margin-top: 5px
+    margin-bottom: 2px
+    text-align: center
+    line-height: 20px
+    font-size: 10px
+
+.skill-mark
+    padding-right: 0px
+    padding-left: 0px
+    div
+        width: 100px
+        height: 30px
+        line-height: 30px
+        margin: 0 auto
+        margin-bottom: 5px
+        display: block
+
+.tag
+    color: $font-color
+    display: inline-block
+    width: auto
+    text-align: center
+    border-radius: 8px
+    margin-right: 3px
+
+$skill: js, jq, react, css, html, bs, sass, c, as, flash, php, perl, mysql, joomla, webpack, gulp, svn
+$skillContent: JavaScript, Jquery, React, CSS, HTML, Bootstrap, Sass, C, ActionScript, Flash, PHP, Perl, MySQL, Joomla, Webpack, Gulp, SVN
+$skillColor: #FF8000, #005AB5, #00DD77, #46A3FF, #FF5809, #9955FF, #FF88C2 , #55AA00, #FF2D2D, #4D0000, #9F4D95, #00AEAE, #FFBB00, #AA7700, #6A6AFF, #AD5A5A, #00BB00
+@for $i from 1 through length($skill)
+    .tag-#{nth($skill, $i)}
+        background: nth($skillColor, $i)
+        min-width: 75px
+        &:before
+            content: "" + nth($skillContent, $i)
+
+.duringtime
+    line-height: 1.8
+
+.timeline
+    list-style: none
+    padding: 20px 0 20px
+    position: relative
+    &:before
+        top: 0
+        bottom: 0
+        position: absolute
+        content: " "
+        width: 3px
+        background-color: $border-color
+        left: 50%
+    > li
+        margin-bottom: 20px
+        position: relative
+        &:before,
+        &:after
+            content: " "
+            display: table
+        &:after
+            clear: both
+        > .timeline-panel
+            width: 46%
+            float: left
+            border: 2px solid #d4d4d4
+            border-radius: 15px
+            padding: 5px 10px
+            position: relative
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
+            &:before
+                position: absolute
+                top: 26px
+                right: -17px
+                display: inline-block
+                border-top: 17px solid transparent
+                border-left: 17px solid #ccc
+                border-right: 0 solid #ccc
+                border-bottom: 17px solid transparent
+                content: " "
+            &:after
+                position: absolute
+                top: 27px
+                right: -14px
+                display: inline-block
+                border-top: 15px solid transparent
+                border-left: 15px solid $background-color
+                border-right: 0 solid $background-color
+                border-bottom: 15px solid transparent
+                content: " "
+        > .timeline-badge
+            color: #fff
+            width: 15px
+            height: 15px
+            position: absolute
+            top: 35px
+            left: 50%
+            margin-left: -6px
+            background-color: $border-color
+            z-index: 100
+            border-radius: 50%
+    > li.timeline-inverted > .timeline-panel
+        float: right
+        &:before
+            border-left-width: 0
+            border-right-width: 17px
+            left: -18px
+            right: auto
+        &:after
+            border-left-width: 0
+            border-right-width: 16px
+            left: -16px
+            right: auto
+
+.timeline-body p
+    margin-bottom: 0
+
+.project-title
+    text-align: center !important
+    @media (max-width: 992px)
+        text-align: left !important
+
+.project-c2
+    border-left: 0.5px solid $border-color
+    border-right: 0.5px solid $border-color
+
+@media (max-width: 991px)
+    .project-c1, .project-c2
+        border: 0px
+        border-bottom: 0.5px solid $border-color
+    .project-c3
+        border-bottom: 0
+
+@media (max-width: 360px)
+    .skill-mark div
+        width: 70px
+        font-size: 11px
+
+@media (max-width: 532px)
+    .div-nav
+        text-align: center
+    .navbar-nav
+        width: 100%
+        margin: auto
+
+@media (max-width: 768px)
+    .timeline
+        &:before
+            left: 15px
+        > li
+            > .timeline-panel
+                width: calc(100% - 45px)
+                width: -moz-calc(100% - 45px)
+                width: -webkit-calc(100% - 45px)
+                float: right
+                margin-right: 5px
+                &:before
+                    border-left-width: 0
+                    border-right-width: 15px
+                    left: -15px
+                    right: auto
+                &:after
+                    border-left-width: 0
+                    border-right-width: 14px
+                    left: -14px
+                    right: auto
+            > .timeline-badge
+                left: 6px
+                margin-left: 3px
+                top: 35px
+    .navbar-nav
+        float: left
+        margin: 0px
+        li
+            display: inline-block
